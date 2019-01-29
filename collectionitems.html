@@ -14,7 +14,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
-    <title>YIS 6.0 | Dashboard</title>
+    <title>YIS 6.0 | Collection Items</title>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-extension.css" rel="stylesheet">
@@ -28,8 +28,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link href="css/multi-select.css" rel="stylesheet" type="text/css" />
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/colors/default.css" id="theme" rel="stylesheet">
+    <link href="css/colors/main.css" id="theme" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -168,6 +167,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           <li><a href="javascript:void(0)"><i class="fa fa-power-off"></i> Logout</a></li>
                         </ul>
                         <!-- /.dropdown-user -->
+                    </li>
+                    <li class="dropdown"> <a class="waves-effect waves-light dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)"><i class="ti-settings"></i></a>
+                      <ul class="dropdown-menu dropdown-user animated flipInY colorSettings">
+                        <li><a href="javascript:void(0)" theme="main" class="default-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="website" class="website-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="blue" class="blue-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="green" class="green-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="brown" class="brown-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="magenta" class="magenta-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="darkblue" class="darkblue-color-theme"></a></li>
+                      </ul>
                     </li>
                 </ul>
             </div>
@@ -960,6 +970,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="js/custom.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/remodal.js"></script>
+    <script src="js/jQuery.style.switcher.js"></script>
     <script>
 (function() {
 var fauxTable = document.getElementById("faux-table");
