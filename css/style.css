@@ -16,6 +16,11 @@ h1, h2, h3, h4, h5, h6 {font-family:'MODERNESANS'; letter-spacing:-0.4px;}
 .brown-color-theme, .brown-color-theme:hover {background-color:#804b00 !important;}
 .magenta-color-theme, .magenta-color-theme:hover {background-color:#01c0c8 !important;}
 .darkblue-color-theme, .darkblue-color-theme:hover {background-color:#0b5492 !important;}
+.MarginBottom10 {margin-bottom:10px !important;}
+.MarginBottom0 {margin-bottom:0px !important;}
+.tooltip .tooltip-inner {font-size:12px; font-weight:normal; background-color:#000;}
+.tooltip .tooltip-inner:before {border-top-color:#000 !important;}
+
 .bootstrap-select.show-tick .dropdown-menu .selected span.check-mark:after{
   content: '';
     display: block;
@@ -33,6 +38,258 @@ h1, h2, h3, h4, h5, h6 {font-family:'MODERNESANS'; letter-spacing:-0.4px;}
 }
 .help-txt {font-size:11px; color:#000;}
 
+/* Warehouse Dashboard CSS */
+
+/* Card view 3 */
+.head-card{
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.14);
+    border: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 6px;
+    color: #333;
+    background: #f7f7f9;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    font-size: .875rem;
+}
+.card-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 17px 0;
+    color: #fff;
+    margin-top: -32px;
+    float: left;
+}
+.card-icon img{margin:0px auto;}
+.card-text-right{padding:5px 0px;}
+.card-text-right .card-title{
+    margin-top: 4px;
+    font-size: 23px;
+    font-weight: 500;
+}
+.card-footer-details{padding:5px; overflow:hidden;}
+.card-footer-details p {
+    font-size: 14px;
+    margin-bottom: 0px;
+    padding:0px 10px;
+}
+
+/* Goals Progress Chart CSS */
+
+.progress-pie-chart {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  background-color: #ececec;
+  position: relative;
+}
+.progress-pie-chart.gt-50 {
+  background-color: orange;
+}
+.progress-pie-chart.red .ppc-progress-fill {
+  background: #c10000;
+}
+.progress-pie-chart.red span {
+  color: #c10000;
+}
+.progress-pie-chart.orange .ppc-progress-fill {
+  background: #f39c12;
+}
+.progress-pie-chart.orange span {
+  color: #f39c12;
+}
+.progress-pie-chart.green.gt-50,
+.progress-pie-chart.green .ppc-progress-fill {
+  background: #00822d;
+}
+.progress-pie-chart.green span {
+  color: #00822d;
+}
+
+.ppc-progress {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 64px);
+  top: calc(50% - 64px);
+  width: 128px;
+  height: 128px;
+  clip: rect(0, 128px, 128px, 64px);
+}
+.ppc-progress .ppc-progress-fill {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 64px);
+  top: calc(50% - 64px);
+  width: 128px;
+  height: 128px;
+  clip: rect(0, 64px, 128px, 0);
+  transform: rotate(60deg);
+}
+.gt-50 .ppc-progress {
+  clip: rect(0, 64px, 128px, 0);
+}
+.gt-50 .ppc-progress .ppc-progress-fill {
+  clip: rect(0, 128px, 128px, 64px);
+  background: #E5E5E5;
+}
+
+.ppc-percents {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    left: calc(50% - 100.30435px/2);
+    top: calc(50% - 100.30435px/2);
+    width: 100.30435px;
+    height: 100.30435px;
+    background: #fff;
+    text-align: center;
+    display: table;
+}
+.ppc-percents span {
+  display: block;
+  font-size: 18px;
+}
+.ppc-percents span cite {
+  font-size: 35px;
+}
+
+.pcc-percents-wrapper {
+  display: table-cell;
+  vertical-align: middle; font-size:18px; font-family: 'Roboto', sans-serif;
+}
+
+.progress-pie-chart {
+  margin: 20px auto;
+}
+.Legend {float:left; margin-right:20px; overflow:hidden;}
+.legend100 {width:20px; height:20px; background-color:#00822d; float:left; margin-right:10px; margin-top:-5px;}
+.legend90to100 {width:20px; height:20px; background-color:#00d84b; float:left; margin-right:10px; margin-top:-5px;}
+.legend50to90 {width:20px; height:20px; background-color:#f39c12; float:left; margin-right:10px; margin-top:-5px;}
+.legend50 {width:20px; height:20px; background-color:#c10000; float:left; margin-right:10px; margin-top:-5px;}
+.GoalsChart {overflow:hidden; padding:10px; background-color:#f7f7f9; border-radius:6px;box-shadow: 0 1px 4px 0 rgba(0,0,0,.14);}
+.LegendContent {margin-top:17px; overflow:hidden;}
+/* End Goals Progress Chart CSS */
+
+.employee-card{
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.14);
+    border: 0;
+    border-radius: 6px;
+    color: #333;
+    background: #f7f7f9;
+    width: 100%;
+    padding:5px; margin-bottom:10px;
+}
+.card-header-details {border-bottom:1px solid rgba(0,0,0,.125);}
+.card-content-details {border-bottom:1px solid rgba(0,0,0,.125); overflow:hidden;}
+.card-content-info {float:left; overflow:hidden; margin-right:20px;}
+.card-header-details h4 {margin-bottom:5px; margin-top:5px;}
+.ldBar-label:after {
+    content: "Picks";
+    color: #aaa;
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: 200;
+  }
+  .ldBar-label {font-size:15px; color:#4f5467; text-align:center;}
+  .EmployeeData .mainline {stroke-width:6; stroke:#4f5467;}
+  .EmployeeData .baseline {stroke-width:3;}
+  .EmployeeData2 .mainline {stroke-width:6; stroke:#4f5467;}
+  .EmployeeData2 .baseline {stroke-width:3;}
+  .EmployeeData3 .mainline {stroke-width:6; stroke:#4f5467;}
+  .EmployeeData3 .baseline {stroke-width:3;}
+  .EmployeeData4 .mainline {stroke-width:6; stroke:#4f5467;}
+  .EmployeeData4 .baseline {stroke-width:3;}
+  .EmployeeData5 .mainline {stroke-width:6; stroke:#4f5467;}
+  .EmployeeData5 .baseline {stroke-width:3;}
+  .EmployeeData6 .mainline {stroke-width:6; stroke:#4f5467;}
+  .EmployeeData6 .baseline {stroke-width:3;}
+  .EmployeeData7 .mainline {stroke-width:6; stroke:#4f5467;}
+  .EmployeeData7 .baseline {stroke-width:3;}
+  .EmployeeData8 .mainline {stroke-width:6; stroke:#4f5467;}
+  .EmployeeData8 .baseline {stroke-width:3;}
+  .employee-card .card-footer-details p {font-size:17px;}
+
+/*  End Warehouse Dashboard CSS */
+
+/* checkin css */
+.width-250{width:250px;}
+.width-150{width:150px;}
+.width-300{width:300px}
+.table>thead>tr>th{color:#fff;}
+.table-padding tbody .view td{padding:5px 30px !important;}
+.table-padding tbody .fold .fold-padding{padding:0px !important;}
+.checkin-panel-right ul{list-style: none;}
+table.fold-table > tbody > tr.view td, table.fold-table > tbody > tr.view th {
+  cursor: pointer;
+}
+table.fold-table > tbody > tr.view td:first-child,
+table.fold-table > tbody > tr.view th:first-child {
+  position: relative;
+  padding-left: 20px;
+}
+table.fold-table > tbody > tr.view td:first-child:before,
+table.fold-table > tbody > tr.view th:first-child:before {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  width: 9px;
+  height: 16px;
+  margin-top: -8px;
+  font: 16px fontawesome;
+  color: #999;
+  content: "\f138"; margin-right:5px;
+  transition: all .3s ease;
+}
+table.fold-table > tbody > tr.view:nth-child(4n-1) {
+  background: #eee;
+}
+table.fold-table > tbody > tr.view:hover {
+  background: #f1f1f1;
+}
+table.fold-table > tbody > tr.view.open {
+  color: #000;
+}
+table.fold-table > tbody > tr.view.open td:first-child:before, table.fold-table > tbody > tr.view.open th:first-child:before {
+  transform: rotate(90deg);
+  color: #333; margin-top:-10px;
+}
+table.fold-table > tbody > tr.fold {
+  display: none;
+}
+table.fold-table > tbody > tr.fold.open {
+  display: table-row;
+}
+
+
+.fold-content h3 {
+  margin-top: 0;
+}
+.fold-content > table {
+  border: 1px solid #ccc;
+}
+.fold-content > table > tbody tr:nth-child(even) {
+  background: #eee;
+}
+
+/* end of checkin css */
+
+/* Item FIlter CSS */
+
+
+
+
+/* End Item FIlter CSS */
 
 
 

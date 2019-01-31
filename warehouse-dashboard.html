@@ -14,10 +14,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
-    <title>YIS 6.0 | Dashboard</title>
+    <title>YIS 6.0 | Warehouse</title>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-extension.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <!-- Menu CSS -->
     <link href="css/sidebar-nav.min.css" rel="stylesheet">
     <!-- Animation CSS -->
@@ -25,7 +26,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link href="css/custom-select.css" rel="stylesheet" type="text/css" />
     <link href="css/bootstrap-select.min.css" rel="stylesheet" />
     <link href="css/multi-select.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="css/loading-bar.css" rel="stylesheet" type="text/css" />
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/colors/main.css" id="theme" rel="stylesheet">
@@ -171,8 +172,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <li class="dropdown"> <a class="waves-effect waves-light dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)"><i class="ti-settings"></i></a>
                       <ul class="dropdown-menu dropdown-user animated flipInY colorSettings">
                         <li><a href="javascript:void(0)" theme="main" class="default-color-theme"></a></li>
-                        <li><a href="javascript:void(0)" theme="default" class="website-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="website" class="website-color-theme"></a></li>
                         <li><a href="javascript:void(0)" theme="blue" class="blue-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="green" class="green-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="brown" class="brown-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="magenta" class="magenta-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="darkblue" class="darkblue-color-theme"></a></li>
                       </ul>
                     </li>
                 </ul>
@@ -181,16 +186,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- /.navbar-top-links -->
             <!-- /.navbar-static-side -->
         </nav>
-        <!-- End Top Navigation -->
-        <!-- Left navbar-header -->
-       <div class="navbar-default sidebar" role="navigation">
-            <div class="sidebar-nav navbar-collapse slimscrollsidebar  HorizontalMenu">
+
+        <!-- Left navbar-header end -->
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse slimscrollsidebar HorizontalMenu">
                 <ul class="nav" id="side-menu">
                     <li class="user-pro">
                         <a href="#" class="waves-effect"><img src="images/profile.jpg" alt="user-img" class="img-circle"> <span class="hide-menu"> Rakesh<span class="fa arrow"></span></span>
                         </a>
                         <hr class="menu-hr"/>
-                        <ul class="nav nav-second-level">
+                        <ul class="nav nav-second-level profile-menu">
                             <li><a href="javascript:void(0)"><i class="ti-user"></i> My Profile</a></li>
                             <li><a href="javascript:void(0)"><i class="ti-wallet"></i> My Orders</a></li>
                             <li><a href="javascript:void(0)"><i class="ti-email"></i> My Claims</a></li>
@@ -293,86 +298,328 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </ul>
             </div>
         </div>
-        <!-- Left navbar-header end -->
         <!-- Page Content -->
         <div id="page-wrapper">
             <div class="container-fluid">
                 <div class="row bg-title">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Orders</h4>
+                        <h4 class="page-title">Dashboard</h4>
                     </div>
                     <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                       <ol class="breadcrumb">
-                              <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
-                              <li class="breadcrumb-item active">Orders</li>
+                              <li class="breadcrumb-item"><a href="javascript:void(0)">Warehouse</a></li>
+                              <li class="breadcrumb-item active">Dashboard</li>
                           </ol>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12 nopaddingleft nopaddingright">
                         <div class="white-box clearfix">
-                          <div class="panel panel-inverse MarginTop20">
-                            <div class="panel-heading">Orders</div>
-                                <div class="panel-wrapper collapse in">
-                                    <div class="panel-body collectionitemsedit">
-                                        <div class="col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-sm-10 offset-sm-1 col-xs-12">
-                                          <form class="horizontal-form form">
-                                              <div class="col-md-12">
-                                                <div class="form-group col-md-4">
-                                                  <div class="radio radio-theme">
-                                                      <input type="radio" name="radio" id="allitems" value="allitems">
-                                                      <label for="allitems"> All  </label>
-                                                  </div>
-                                                </div>
-                                                <div class="form-group col-md-4">
-                                                  <div class="radio radio-theme">
-                                                      <input type="radio" name="radio" id="allitems" value="allitems">
-                                                      <label for="allitems"> Road  </label>
-                                                  </div>
-                                                </div>
-                                                <div class="form-group col-md-4">
-                                                  <div class="radio radio-theme">
-                                                      <input type="radio" name="radio" id="allitems" value="allitems">
-                                                      <label for="allitems"> Show  </label>
-                                                  </div>
-                                                </div>
-                                              </div>
-
-                                              <div class="col-md-12 MarginTop15">
-                                                <div class="form-group col-md-4">
-                                                  <select class="selectpicker" multiple data-style="form-control">
-                                                      <option selected>Select Rep Group</option>
-                                                      <option>Van Carson</option>
-                                                      <option>WMA Sales</option>
-                                                      <option>Gib Carson</option>
-                                                      <option>CMA</option>
-                                                  </select>
-                                                </div>
-                                                <div class="form-group col-md-4">
-                                                  <select class="selectpicker" multiple data-style="form-control">
-                                                      <option selected>Select Rep</option>
-                                                      <option>Kerry  Cowher</option>
-                                                      <option>Melissa Perrin</option>
-                                                      <option>Steven Goecke</option>
-                                                      <option>Steve Walther</option>
-                                                  </select>
-                                                </div>
-                                                <div class="form-group col-md-4">
-                                                  <select class="selectpicker" multiple data-style="form-control">
-                                                      <option selected>Select Show</option>
-                                                      <option>Atlanta</option>
-                                                      <option>Vegas</option>
-                                                  </select>
-                                                </div>
-                                              </div>
-                                              <div class="col-md-12 text-center center-block MarginTop15">
-                                                  <button type="button" class="fcbtn btn btn-outline btn-primary btn-1c">Generate Excel</button>
-                                              </div>
-                                          </form>
+							<section>
+								 <div class="col-md-2">
+                                    <div class="head-card card-stats">
+                                        <div class="card-header card-header-warning card-header-icon">
+                                            <div class="card-icon">
+                                                <img src="images/calendar.png" class="img-responsive" alt="">
+                                             </div>
+                                             <div class="card-text-right text-right">
+                                                    <h3 class="card-title">0 / 8</h3>
+                                             </div>
+                                        </div>
+                                        <div class="card-footer-details">
+                                            <p>Days Behind VLD / Non VLD</p>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-md-2">
+                                        <div class="head-card card-stats">
+                                            <div class="card-header card-header-warning card-header-icon">
+                                                <div class="card-icon">
+                                                        <img src="images/cancel-form.png" class="img-responsive" alt="">
+                                                 </div>
+                                                 <div class="card-text-right text-right">
+                                                        <h3 class="card-title">402 / 33</h3>
+                                                 </div>
+                                            </div>
+                                            <div class="card-footer-details">
+                                                <p>Cancel Picks / Orders</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                            <div class="head-card card-stats">
+                                                <div class="card-header card-header-warning card-header-icon">
+                                                    <div class="card-icon">
+                                                            <img src="images/available.png" class="img-responsive" alt="">
+                                                     </div>
+                                                     <div class="card-text-right text-right">
+                                                            <h3 class="card-title">3,761</h3>
+                                                     </div>
+                                                </div>
+                                                <div class="card-footer-details">
+                                                    <p>Available Picks</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                                <div class="head-card card-stats">
+                                                    <div class="card-header card-header-warning card-header-icon">
+                                                        <div class="card-icon">
+                                                                <img src="images/community.png" class="img-responsive" alt="">
+                                                         </div>
+                                                         <div class="card-text-right text-right">
+                                                                <h3 class="card-title">0 / 23</h3>
+                                                         </div>
+                                                    </div>
+                                                    <div class="card-footer-details">
+                                                        <p>Pullers / All Staff</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                    <div class="head-card card-stats">
+                                                        <div class="card-header card-header-warning card-header-icon">
+                                                            <div class="card-icon">
+                                                                    <img src="images/delivery.png" class="img-responsive" alt="">
+                                                             </div>
+                                                             <div class="card-text-right text-right">
+                                                                    <h3 class="card-title">$0</h3>
+                                                             </div>
+                                                        </div>
+                                                        <div class="card-footer-details">
+                                                            <p>Ship $ Today</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                        <div class="head-card card-stats">
+                                                            <div class="card-header card-header-warning card-header-icon">
+                                                                <div class="card-icon">
+                                                                        <img src="images/money-bag.png" class="img-responsive" alt="">
+                                                                 </div>
+                                                                 <div class="card-text-right text-right">
+                                                                        <h3 class="card-title">9 / $264</h3>
+                                                                 </div>
+                                                            </div>
+                                                            <div class="card-footer-details">
+                                                                <p>YTD Claims / Claim$</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+													<div class="clearfix"></div>
+							</section>
+              <section>
+                <div class="col-md-2">
+                    <div class="GoalsChart">
+                      <h5 class="text-center">Wed, January 30</h5>
+                      <h3 class="text-center">Goal: 2194</h3>
+
+                      <div class="col-md-12">
+                        <div class="progress-pie-chart" data-percent="22">
+                           <div class="ppc-progress">
+                            <div class="ppc-progress-fill"></div>
+                           </div>
+                           <div class="ppc-percents">
+                            <div class="pcc-percents-wrapper">89 Picks</div>
+                           </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 LegendContent">
+                          <div class="Legend">
+                              <h5><span class="legend100"></span>&nbsp;>&nbsp;100%</h5>
                           </div>
+                          <div class="Legend">
+                              <h5><span class="legend90to100"></span>&nbsp;90&nbsp;-&nbsp;100%</h5>
+                          </div>
+                          <div class="Legend">
+                              <h5><span class="legend50to90"></span>&nbsp;50&nbsp;-&nbsp;90%</h5>
+                          </div>
+                          <div class="Legend">
+                              <h5><span class="legend50"></span>&nbsp;<&nbsp;50%</h5>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="col-md-3">
+                          <div class="employee-card card-stats">
+                              <div class="card-header-details">
+                                  <h4>1.Michelle<span class="badge badge-warning pull-right">2 Claims</span></h4>
+                              </div>
+                              <div class="card-content-details">
+                                <div class="card-content-info">
+                                    <p>Pieces/Cases</p>
+                                    <h4>244/0</h4>
+                                </div>
+                                <div class="card-content-info">
+                                    <p>Qs/ Trips</p>
+                                    <h4>1/1</h4>
+                                </div>
+                                <div class="EmployeeData label-center" style="width:70px; float:right;" data-value="25" data-preset="circle"></div>
+                              </div>
+                              <div class="card-footer-details">
+                                  <p class="pull-left"><strong>Goal:160</strong></p>
+                                  <p class="pull-right"><strong>$749</strong></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-3">
+                              <div class="employee-card card-stats">
+                                  <div class="card-header-details">
+                                      <h4>2.Angela<span class="badge badge-warning pull-right">2 Claims</span></h4>
+                                  </div>
+                                  <div class="card-content-details">
+                                    <div class="card-content-info">
+                                        <p>Pieces/Cases</p>
+                                        <h4>220/0</h4>
+                                    </div>
+                                    <div class="card-content-info">
+                                        <p>Qs/ Trips</p>
+                                        <h4>4/3</h4>
+                                    </div>
+                                    <div class="EmployeeData2 label-center" style="width:70px; float:right;" data-value="22" data-preset="circle"></div>
+                                  </div>
+                                  <div class="card-footer-details">
+                                      <p class="pull-left"><strong>Goal:150</strong></p>
+                                      <p class="pull-right"><strong>$750</strong></p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                                  <div class="employee-card card-stats">
+                                      <div class="card-header-details">
+                                          <h4>3.Annette<span class="badge badge-warning pull-right">2 Claims</span></h4>
+                                      </div>
+                                      <div class="card-content-details">
+                                        <div class="card-content-info">
+                                            <p>Pieces/Cases</p>
+                                            <h4>182/1</h4>
+                                        </div>
+                                        <div class="card-content-info">
+                                            <p>Qs/ Trips</p>
+                                            <h4>3/2</h4>
+                                        </div>
+                                        <div class="EmployeeData3 label-center" style="width:70px; float:right;" data-value="19" data-preset="circle"></div>
+                                      </div>
+                                      <div class="card-footer-details">
+                                          <p class="pull-left"><strong>Goal:160</strong></p>
+                                          <p class="pull-right"><strong>$806</strong></p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-3">
+                                      <div class="employee-card card-stats">
+                                          <div class="card-header-details">
+                                              <h4>4.Lisa</h4>
+                                          </div>
+                                          <div class="card-content-details">
+                                            <div class="card-content-info">
+                                                <p>Pieces/Cases</p>
+                                                <h4>203/0</h4>
+                                            </div>
+                                            <div class="card-content-info">
+                                                <p>Qs/ Trips</p>
+                                                <h4>4/4</h4>
+                                            </div>
+                                            <div class="EmployeeData4 label-center" style="width:70px; float:right;" data-value="23" data-preset="circle"></div>
+                                          </div>
+                                          <div class="card-footer-details">
+                                              <p class="pull-left"><strong>Goal:160</strong></p>
+                                              <p class="pull-right"><strong>$694</strong></p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-3">
+                                          <div class="employee-card card-stats">
+                                              <div class="card-header-details">
+                                                  <h4>5.Donita</h4>
+                                              </div>
+                                              <div class="card-content-details">
+                                                <div class="card-content-info">
+                                                    <p>Pieces/Cases</p>
+                                                    <h4>395/1</h4>
+                                                </div>
+                                                <div class="card-content-info">
+                                                    <p>Qs/ Trips</p>
+                                                    <h4>3/3</h4>
+                                                </div>
+                                                <div class="EmployeeData5 label-center" style="width:70px; float:right;" data-value="39" data-preset="circle"></div>
+                                              </div>
+                                              <div class="card-footer-details">
+                                                  <p class="pull-left"><strong>Goal:180</strong></p>
+                                                  <p class="pull-right"><strong>$1,304</strong></p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                              <div class="employee-card card-stats">
+                                                  <div class="card-header-details">
+                                                      <h4>6.Kathy<span class="badge badge-warning pull-right">1 Claims</span></h4>
+                                                  </div>
+                                                  <div class="card-content-details">
+                                                    <div class="card-content-info">
+                                                        <p>Pieces/Cases</p>
+                                                        <h4>138/0</h4>
+                                                    </div>
+                                                    <div class="card-content-info">
+                                                        <p>Qs/ Trips</p>
+                                                        <h4>3/2</h4>
+                                                    </div>
+                                                    <div class="EmployeeData6 label-center" style="width:70px; float:right;" data-value="19" data-preset="circle"></div>
+                                                  </div>
+                                                  <div class="card-footer-details">
+                                                      <p class="pull-left"><strong>Goal:140</strong></p>
+                                                      <p class="pull-right"><strong>$544</strong></p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-md-3">
+                                                  <div class="employee-card card-stats">
+                                                      <div class="card-header-details">
+                                                          <h4>7.Linda</h4>
+                                                      </div>
+                                                      <div class="card-content-details">
+                                                        <div class="card-content-info">
+                                                            <p>Pieces/Cases</p>
+                                                            <h4>128/3</h4>
+                                                        </div>
+                                                        <div class="card-content-info">
+                                                            <p>Qs/ Trips</p>
+                                                            <h4>4/3</h4>
+                                                        </div>
+                                                        <div class="EmployeeData7 label-center" style="width:70px; float:right;" data-value="52" data-preset="circle"></div>
+                                                      </div>
+                                                      <div class="card-footer-details">
+                                                          <p class="pull-left"><strong>Goal:150</strong></p>
+                                                          <p class="pull-right"><strong>$1,071</strong></p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="col-md-3">
+                                                      <div class="employee-card card-stats">
+                                                          <div class="card-header-details">
+                                                              <h4>8.Carrole</h4>
+                                                          </div>
+                                                          <div class="card-content-details">
+                                                            <div class="card-content-info">
+                                                                <p>Pieces/Cases</p>
+                                                                <h4>90/9</h4>
+                                                            </div>
+                                                            <div class="card-content-info">
+                                                                <p>Qs/ Trips</p>
+                                                                <h4>5/1</h4>
+                                                            </div>
+                                                            <div class="EmployeeData8 label-center" style="width:70px; float:right;" data-value="18" data-preset="circle"></div>
+                                                          </div>
+                                                          <div class="card-footer-details">
+                                                              <p class="pull-left"><strong>Goal:100</strong></p>
+                                                              <p class="pull-right"><strong>$1,258</strong></p>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+
+                </div>
+              </section>
                         </div>
                     </div>
                 </div>
@@ -394,9 +641,40 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="js/bootstrap-select.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/jquery.multi-select.js"></script>
     <script src="js/custom.min.js"></script>
+    <script src="js/loading-bar.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/remodal.js"></script>
     <script src="js/jQuery.style.switcher.js"></script>
+    <script>
+    $('.progress-pie-chart').each(function(){
+var $ppc = $(this),
+  percent = parseInt($ppc.data('percent')),
+  deg = 360*percent/100;
+if (percent > 50) {
+  $ppc.addClass('gt-50');
+}
+if (percent <= 25) {
+  $ppc.addClass('red');
+} else if (percent >= 25 && percent <= 90) {
+  $ppc.addClass('orange');
+} else if (percent >= 90) {
+  $ppc.addClass('green');
+}
+
+$ppc.find('.ppc-progress-fill').css('transform','rotate('+ deg +'deg)');
+$ppc.find('.ppc-percents span').html('<cite>'+percent+'</cite>'+'%');
+});
+    </script>
+    <script>
+      var bar1 = new ldBar(".EmployeeData");
+      var bar2 = new ldBar(".EmployeeData2");
+      var bar3 = new ldBar(".EmployeeData3");
+      var bar4 = new ldBar(".EmployeeData4");
+      var bar5 = new ldBar(".EmployeeData5");
+      var bar6 = new ldBar(".EmployeeData6");
+      var bar7 = new ldBar(".EmployeeData7");
+      var bar8 = new ldBar(".EmployeeData8");
+    </script>
 </body>
 
 </html>

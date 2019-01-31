@@ -9,6 +9,7 @@
     background: rgba(0, 0, 0, 0.2);
 }
 #side-menu li a {font-size:14px; font-weight:normal;}
+#side-menu li a.active {background-color:#73788a;}
 .sidebar .fa-fw {font-size:14px;}
 .navbar-top-links>li>a {min-height:100%; line-height:58px;}
 .app-search .form-control, .app-search .form-control:focus {margin-left:70px; margin-top:13px; width:350px;}
@@ -489,8 +490,7 @@ box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
     margin-top: 3px;
     padding: 10px;
 }
-.tooltip .tooltip-inner {font-size:12px; font-weight:normal; background-color:#9399ab;}
-.tooltip .tooltip-inner:before {border-top-color:#4f5467 !important;}
+
 .page-title i {background-color: #4f5467;
     padding: 5px 9px;
     color: #fff;
@@ -943,3 +943,19 @@ html.remodal-is-locked {
 }
 
 }
+
+.btn-primary:active:focus, .btn-primary:active:hover {background-color:#4f5467;}
+.btn-primary.btn-outline {
+    color: #4f5467;
+    background-color: #fff; border:1px solid #4f5467;
+}
+
+.btn-primary.btn-outline.focus, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:hover {background-color:#4f5467;}
+.btn-1b.btn-primary:after,.btn-1c.btn-primary:after,.btn-1d.btn-primary:after,.btn-1e.btn-primary:after,.btn-1f.btn-primary:after{background:#4f5467;}
+/*Warehouse Dashboard CSS */
+.card-icon {background-color:#4f5467;}
+
+/* Personalization CSS */
+
+.btn-circle.btn-primary {background-color:#4f5467;}
+.tab-slider--tabs:after { background: #4F5467;}

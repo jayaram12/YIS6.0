@@ -489,8 +489,7 @@ box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
     margin-top: 3px;
     padding: 10px;
 }
-.tooltip .tooltip-inner {font-size:12px; font-weight:normal; background-color:#9399ab;}
-.tooltip .tooltip-inner:before {border-top-color:#4f5467 !important;}
+
 .page-title i {background-color: #4f5467;
     padding: 5px 9px;
     color: #fff;

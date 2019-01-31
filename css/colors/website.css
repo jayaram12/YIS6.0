@@ -57,8 +57,8 @@ h1, h2, h3, h4, h5, h6 {color:#006680 !important;}
     background-color: #006680;
 }
 .checkbox-primary input[type=checkbox]:checked+label::before {
-    background-color: #4c5667;
-    border-color: #4c5667;
+    background-color: #006680;
+    border-color: #006680;
 }
 .checkbox-primary label {padding-left:14px;}
 .checkbox-primary {margin-bottom:0px; margin-top:0px;}
@@ -102,6 +102,8 @@ table thead th {background-color:#006680 !important;}
 .table-hover>tbody>tr:hover, .table-striped>tbody>tr:nth-of-type(odd), .table>tbody>tr.active>td, .table>tbody>tr.active>th, .table>tbody>tr>td.active, .table>tbody>tr>th.active, .table>tfoot>tr.active>td, .table>tfoot>tr.active>th, .table>tfoot>tr>td.active, .table>tfoot>tr>th.active, .table>thead>tr.active>td, .table>thead>tr.active>th, .table>thead>tr>td.active, .table>thead>tr>th.active {
     background-color: #fff;
 }
+.table-hover>tbody>tr:hover { background-color: #c0d3d8;}
+.table-striped>tbody>tr:nth-of-type(even):hover { background-color: #c0d3d8;}
 .num-circle-white{padding:5px 6PX;border-radius: 50px;background-color: #fff;color: #4bc076;margin-left: 6px;font-size: 12px;}
 .num-circle-red{padding:5px 6PX;border-radius: 50px;background-color: #ea676d;color: #fff;margin-left: 6px;font-size: 12px;}
 .container-fluid {padding-left:15px; padding-right:15px;}
@@ -114,7 +116,6 @@ table thead th {background-color:#006680 !important;}
 .required {color:red;}
 .help-txt {font-size:11px; color:#006680; letter-spacing:1px}
 .table-striped>tbody>tr:nth-of-type(even) {background-color:#f7f7f7;}
-.table-hover>tbody>tr:hover {background-color:#d7dbe5;}
 .btn:focus, .btn-primary:focus {box-shadow:none;}
 .custom-scroll::-webkit-scrollbar-track
 {
@@ -391,6 +392,7 @@ input:checked + .slider:before {
 .HorizontalMenu {background-color:#006680;}
 #side-menu > li > a  {color:#fff !important;}
 #side-menu li a:hover, #side-menu li a:focus {background-color:#0084a6 !important; color:#fff;}
+#side-menu li a.active {background-color:#0084a6;}
 .navbar-top-links>li>a:hover {background-color:#0084a6 !important;}
 .panel .panel-heading {padding:10px;}
 .panel-body {border:1px solid rgba(147, 153, 171, 0.3); border-top:none; padding:10px !important;}
@@ -493,8 +495,7 @@ box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
     margin-top: 3px;
     padding: 10px;
 }
-.tooltip .tooltip-inner {font-size:12px; font-weight:normal; background-color:#9399ab;}
-.tooltip .tooltip-inner:before {border-top-color:#006680 !important;}
+
 .page-title i {background-color: #006680;
     padding: 5px 9px;
     color: #fff;
@@ -925,3 +926,19 @@ html.remodal-is-locked {
 }
 .btn-primary.btn-outline.focus, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:hover {background-color:#006680;}
 .btn-1b.btn-primary:after,.btn-1c.btn-primary:after,.btn-1d.btn-primary:after,.btn-1e.btn-primary:after,.btn-1f.btn-primary:after{background:#006680}
+/*Warehouse Dashboard CSS */
+.card-icon {background-color:#006680;}
+
+.EmployeeData .mainline {stroke-width:6; stroke:#006680;}
+.EmployeeData2 .mainline {stroke-width:6; stroke:#006680;}
+.EmployeeData3 .mainline {stroke-width:6; stroke:#006680;}
+.EmployeeData4 .mainline {stroke-width:6; stroke:#006680;}
+.EmployeeData5 .mainline {stroke-width:6; stroke:#006680;}
+.EmployeeData6 .mainline {stroke-width:6; stroke:#006680;}
+.EmployeeData7 .mainline {stroke-width:6; stroke:#006680;}
+.EmployeeData8 .mainline {stroke-width:6; stroke:#006680;}
+
+/* Personalization CSS */
+
+.btn-circle.btn-primary {background-color:#006680;}
+.tab-slider--tabs:after { background: #006680;}
