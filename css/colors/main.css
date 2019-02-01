@@ -949,9 +949,8 @@ html.remodal-is-locked {
     color: #4f5467;
     background-color: #fff; border:1px solid #4f5467;
 }
-
 .btn-primary.btn-outline.focus, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:hover {background-color:#4f5467;}
-.btn-1b.btn-primary:after,.btn-1c.btn-primary:after,.btn-1d.btn-primary:after,.btn-1e.btn-primary:after,.btn-1f.btn-primary:after{background:#4f5467;}
+.btn-1b.btn-primary:after,.btn-1c.btn-primary:after,.btn-1d.btn-primary:after,.btn-1e.btn-primary:after,.btn-1f.btn-primary:after{background:#4f5467}
 /*Warehouse Dashboard CSS */
 .card-icon {background-color:#4f5467;}
 
@@ -959,3 +958,13 @@ html.remodal-is-locked {
 
 .btn-circle.btn-primary {background-color:#4f5467;}
 .tab-slider--tabs:after { background: #4F5467;}
+
+/* Item Filter CSS */
+
+.datepicker-days table tbody td.today {background-color:#4f5467 !important;}
+
+/* Customer Portal CSS */
+.shortcut-btns .btn-group i {color:#4f5467;}
+
+
+/* Customer Portal CSS */

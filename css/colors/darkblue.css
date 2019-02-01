@@ -942,3 +942,8 @@ html.remodal-is-locked {
 
 .btn-circle.btn-primary {background-color:#0b5492;}
 .tab-slider--tabs:after { background: #0b5492;}
+
+
+/* Item Filter CSS */
+
+.datepicker-days table tbody td.today {background-color:#006e52 !important;}

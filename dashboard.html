@@ -28,8 +28,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/colors/default.css" id="theme" rel="stylesheet">
+    <link href="css/colors/main.css" id="theme" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -169,6 +168,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </ul>
                         <!-- /.dropdown-user -->
                     </li>
+                    <li class="dropdown"> <a class="waves-effect waves-light dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)"><i class="ti-settings"></i></a>
+                      <ul class="dropdown-menu dropdown-user animated flipInY colorSettings">
+                        <li><a href="javascript:void(0)" theme="main" class="default-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="website" class="website-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="blue" class="blue-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="green" class="green-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="brown" class="brown-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="magenta" class="magenta-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="darkblue" class="darkblue-color-theme"></a></li>
+                      </ul>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-header -->
@@ -181,7 +191,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <div class="sidebar-nav navbar-collapse slimscrollsidebar  HorizontalMenu">
                 <ul class="nav" id="side-menu">
                     <li class="user-pro">
-                        <a href="#" class="waves-effect"><img src="images/profile.jpg" alt="user-img" class="img-circle"> <span class="hide-menu"> Rakesh<span class="fa arrow"></span></span>
+                        <a href="#" class="waves-effect"><img src="images/profile.jpg" alt="user-img" class="img-circle"> <span class="hide-menu"> <b>Rakesh</b><span class="fa arrow"></span></span>
                         </a>
                         <hr class="menu-hr"/>
                         <ul class="nav nav-second-level">
@@ -193,13 +203,28 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </ul>
                     </li>
 
-                    <li> <a href="dashboard.html" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="v"></i> <span class="hide-menu"> Dashboard <span class="fa arrow"></span></span></a></li>
+                    <li> <a href="index.html" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="v"></i> <span class="hide-menu"> Dashboard <span class="fa arrow"></span></span></a></li>
                     <li> <a href="javascript:void(0);" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="7"></i> <span class="hide-menu"> Admin <span class="fa arrow"></span></span></a>
                         <ul class="nav nav-second-level">
                             <li> <a href="#"><i class="fa fa-angle-double-right fa-fw fa-fw"></i>&nbsp;Users</a> </li>
                             <li> <a href="#"><i class="fa fa-angle-double-right fa-fw"></i>&nbsp;Department</a> </li>
                             <li> <a href="#"><i class="fa fa-angle-double-right fa-fw"></i>&nbsp;Roles</a> </li>
                             <li> <a href="#"><i class="fa fa-angle-double-right fa-fw"></i>&nbsp;Resource List</a> </li>
+                            <li> <a href="collectionitems.html"><i class="fa fa-object-group fa-fw"></i>&nbsp;Collection Items</a> </li>
+                            <li> <a href="personalization.html"><i class="fa fa-picture-o fa-fw"></i>&nbsp;Personalization</a> </li>
+                        </ul>
+                    </li>
+                    <li> <a href="javascript:void(0);" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="Z"></i> <span class="hide-menu"> Warehouse <span class="fa arrow"></span></span></a>
+                        <ul class="nav nav-second-level">
+                            <li> <a href="warehouse-dashboard.html"><i class="fa fa-tachometer fa-fw"></i>&nbsp;Dashboard</a> </li>
+                            <li> <a href="calendar.html"><i class="fa fa-calendar fa-fw"></i>&nbsp;Calendar</a> </li>
+                            <li> <a href="warehouse-checkin.html"><i class="fa fa-check-circle-o fa-fw"></i>&nbsp;Checkin</a> </li>
+                        </ul>
+                    </li>
+                    <li> <a href="javascript:void(0);" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="Z"></i> <span class="hide-menu"> CSR <span class="fa arrow"></span></span></a>
+                        <ul class="nav nav-second-level">
+                            <li> <a href="zulilyitemfilter.html"><i class="fa fa-user fa-fw"></i>&nbsp;Zulily</a> </li>
+                            <li> <a href="itemfilter.html"><i class="fa fa-filter fa-fw"></i>&nbsp;Item Filter</a> </li>
                         </ul>
                     </li>
                     <li><a href="#" class="waves-effect"><i data-icon=")" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu"> Customers <span class="fa arrow"></span></span></a>
@@ -532,6 +557,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="js/custom.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/remodal.js"></script>
+    <script src="js/jQuery.style.switcher.js"></script>
 </body>
 
 </html>

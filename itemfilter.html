@@ -230,7 +230,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   </li>
                   <li><a href="#" class="waves-effect"><i data-icon=")" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu"> Customers <span class="fa arrow"></span></span></a>
                       <ul class="nav nav-second-level">
-                        <li> <a href="#"><i class="fa fa-laptop fa-fw"></i>&nbsp;Portal</a> </li>
+                        <li> <a href="customerportal.html"><i class="fa fa-laptop fa-fw"></i>&nbsp;Portal</a> </li>
                         <li> <a href="#"><i class="fa fa-user-plus fa-fw"></i>&nbsp;Add New Customer</a> </li>
                         <li> <a href="#"><i class="fa fa-info-circle fa-fw"></i>&nbsp;Information</a> </li>
                         <li> <a href="#"><i class="fa fa-angle-double-right fa-fw"></i>&nbsp;<span class="hide-menu"> Addresses & Contacts <span class="fa arrow"></span></span></a>
@@ -316,7 +316,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <div class="col-md-12 nopaddingleft nopaddingright">
                         <div class="white-box">
                           <section>
-                                <div class="cust-nav-tab">
+                                <!-- <div class="cust-nav-tab">
                                     <ul>
                                         <li class="cust-active">Add Bulk Items</li>
                                         <li>Show Labels</li>
@@ -324,12 +324,26 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                         <li>Collections</li>
                                         <li>Web Deals</li>
                                     </ul>
+                                </div> -->
+                                <div class="col-md-12">
+                                  <div class="form-group col-md-4">
+                                    <label class="control-label col-md-3 MarginTop5">Select Filter : </label>
+                                    <div class="col-md-8">
+                                    <select id="Newitem" class="form-control">
+                                      <option value="">Bulk Items</option>
+                                      <option value="">Show Labels</option>
+                                      <option value="">Zulily</option>
+                                      <option value="">Collections</option>
+                                      <option value="">Web Deals</option>
+                                    </select>
+                                  </div>
+                                  </div>
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="cust-nav-body MarginTop30">
                                         <div class="panel panel-inverse">
                                                 <div class="panel-heading">Item Selection</div>
-                                                <div class="panel-wrapper collapse in">
+                                                <div class="panel-wrapper">
                                                      <div class="panel-body collectionitemsedit">
                                                        <div class="row">
                                                          <div class="col-md-6">
