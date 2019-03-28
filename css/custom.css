@@ -209,3 +209,11 @@ hr.custom {
 #page-wrapper { margin: 0 0 0 250px;}
 
 }
+
+ 
+ .update-status{
+  background-color: #4f5467;
+  color: #fff;
+  font-size:13px;
+}
+.product-order tbody tr td:first-child{text-align: center;}
